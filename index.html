@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git Fav</title>
+  
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="js/main.js" type="module" defer></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <img id="gitfav" src="./assets/Gitfav.svg" alt="star icon and title 'GitFav'">
+      <div class="search">
+        <label class="sr-only" for="sr-only">Enter the Github username you want to bookmark</label>
+        <input id="sr-only" type="text" placeholder="Enter the Github username you want to bookmark">
+        <button> Favorite</button>
+      </div>
+    </header>
+
+    <div class="table">
+
+      <table>
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Repositories</th>
+            <th>Followers</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="noFavoritesYet">
+        <img src="./assets/Estrela.svg" alt="star">
+        <p>No favorites yet</p>
+      </div>  
+
+    </div>
+
+  </div>
+</body>
+</html>

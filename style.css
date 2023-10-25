@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: .5rem;
+  height: 12rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--button-blue);
+  border-radius: 0.5rem;
+}
+
+:root {
+  font-size: 62,5%;
+  
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-mono: 'Roboto Mono', monospace;
+  
+  --black-bg: #000;
+  --thead-bg: #092D38;
+  --inputAndPair-bg: #06181C;
+  --tbody-bg: #030B0D;
+  --button-blue: #065E7C;
+  --white-text: #FFFFFF;
+  --gray-text: #E1E1E6;
+  --dark-gray-text: #4E5455;
+  --placeholder: #7C7C8A;
+  --remove: #F75A68;
+  --border: #4A808C;
+  --odds: #06161b80;
+  --star-blue: #0a7aa0;
+  
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--black-bg);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  padding: 2rem;
+  max-width: 112rem;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  width: 100%;
+  margin-top: 9rem;
+}
+
+header #gitfav {
+  width: 18.6rem;
+  height: 3.2rem;
+}
+
+header input {
+  background-color: var(--inputAndPair-bg);
+  color: var(--gray-text);
+  
+  border-radius: .5rem;
+  border: none;
+  padding: 1.6rem;
+  width: 43rem;
+  
+  font-size: 1.6rem;
+  align-items: center;
+}
+
+header button {
+  border-radius: .5rem;
+  background-color: var(--button-blue);
+  padding: 1.2rem 3.2rem 1.2rem 6.4rem;
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white-text);
+
+  background-image: url(./assets/whiteStar.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: 2.4rem;
+  background-position-x: 3.2rem;
+}
+
+header button:hover {
+  background-image: url(./assets/blueStar.png);
+  color: var(--star-blue);
+  background-color: var(--white-text);
+}
+
+.search {
+  display: flex;
+  gap: .8rem;
+}
+
+tbody {
+  display: block;
+  width: 100%;
+  max-height: 60rem;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+thead,
+tbody tr {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+table * {
+  font-size: 2rem;
+  color: var(--gray-text);
+}
+
+table {
+  width: 100%;
+  margin-top: 8.7rem;
+  
+  border-collapse: collapse;
+}
+
+.table {
+  outline: 1px solid var(--border);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  
+  box-shadow: 0 1rem 2rem -1rem rgba(26, 140, 155, 0.3);
+  margin-bottom: 11rem;
+}
+
+table th {
+  font-weight: 700;
+  text-align: left; 
+  
+  background-color: var(--thead-bg);
+  padding: 1.6rem 4rem;
+}
+
+table tr:nth-child(even) {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--thead-bg);
+}
+
+table tr:nth-child(odd) {
+  background: var(--odds);
+}
+
+table tr {
+  background: var(--inputAndPair-bg);
+}
+
+.remove {
+  color: var(--remove);
+  cursor: pointer;
+}
+
+.remove:hover {
+  color: #9e0916;
+  font-weight: 700;
+}
+
+table td {
+  padding: 2.4rem 0 2.4rem 4rem;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+td.user p {
+  font-weight: 700;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user img {
+  width: 5.6rem;
+  height: 5.6rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.noFavoritesYet {
+  background-color: var(--tbody-bg);
+  width: 100%;
+  height: 50rem;
+  margin-top: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  border-radius: 0 0 1rem 1rem;
+  
+  font-family: var(--ff-mono);
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--dark-gray-text);
+}
+
+.noFavoritesYet img {
+  width: 13.2rem;
+  height: 12.5rem;
+}
+
+.hide {
+  display: none;
+}
