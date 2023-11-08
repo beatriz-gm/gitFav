@@ -1,7 +1,8 @@
 
 # Github Favorites
 
-Crie sua própria lista de favoritos do Github! Procure e adicione quem quiser, e caso queira excluir alguém, é só clicar em remover!
+Crie sua própria lista de favoritos do Github clicando aqui: https://beatriz-gm.github.io/gitFav/ ! 
+Procure e adicione quem quiser, e caso queira excluir alguém, é só clicar em remover!
 
 ## Layout sem favoritos adicionados:
 
