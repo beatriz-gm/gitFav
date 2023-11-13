@@ -10,3 +10,6 @@ Procure e adicione quem quiser, e caso queira excluir alguém, é só clicar em 
 
 ## Favorito adicionado:
 ![alt text](assetsForREADME/fav.png "Favorite added")
+
+## Tecnologias utilizadas:
+Figma, HTML, CSS e JavaScript
