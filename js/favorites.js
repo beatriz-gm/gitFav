@@ -26,7 +26,7 @@ export class Favorites {
       const user = await GithubUser.search(username)
 
       if(user.login === undefined) {
-        throw new Error('Usuário não encontrado!')
+        throw new Error('User not found!')
       }
 
       this.entries = [user, ...this.entries]
