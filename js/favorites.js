@@ -110,7 +110,7 @@ export class FavoritesView extends Favorites {
       row.querySelector('.followers').textContent = user.followers
       
       row.querySelector('.remove').onclick = () => {
-        const isOk = confirm(`Tem certeza que deseja deletar ${user.login}?`)
+        const isOk = confirm(`Are you sure you want to delete ${user.login}?`)
         if(isOk) {
           this.delete(user)
         }
