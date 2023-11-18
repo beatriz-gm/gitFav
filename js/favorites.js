@@ -20,7 +20,7 @@ export class Favorites {
       const userExists = this.entries.find(entry => entry.login === username)
 
       if(userExists) {
-        throw new Error('Usuário já cadastrado!')
+        throw new Error('User already registered!')
       }
 
       const user = await GithubUser.search(username)
