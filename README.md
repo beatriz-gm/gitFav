@@ -16,3 +16,5 @@ Procure e adicione quem quiser, e caso queira excluir alguém, é só clicar em 
 - HTML
 - CSS
 - JavaScript
+  
+# By: [Beatriz Galvão](https://www.linkedin.com/in/beatriz-galmed/) 🖤
